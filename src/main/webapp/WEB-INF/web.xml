@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>JSPBasic</display-name>
+  
+  
+  <!-- 서블릿을 web.xml에 등록 -->
+  
+  <servlet>
+  	<servlet-name>basic</servlet-name>
+  	<servlet-class>com.servlet.TestServlet02</servlet-class>
+  </servlet>
+  
+  <!-- 위 basic변수에 대한 맵핑설정 -->
+  <servlet-mapping>
+  	<servlet-name>basic</servlet-name>
+  	<url-pattern>/apple</url-pattern>	
+  </servlet-mapping>
+  
+  <!-- 예외페이지 전역설정 -->
+	<!-- 
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page>
+  	<error-page>
+  		<exception-type>java.lang.NullPointerException</exception-type>
+  		<location>/errorpage/error_view.jsp</location>
+  	</error-page>
+   -->
+  
+  
+  
+</web-app>
